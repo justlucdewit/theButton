@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The button</title>
+		<style type="text/css">
+			body{
+				background-color: #cdc1af;
+				text-align: center;
+				font-size: 0;
+			}
+
+			#theButton, #lamp, #sign{
+				width: 6vw;
+				image-rendering: pixelated;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: crisp-edges;
+				padding: 0px;
+				margin-top: 10px;
+			}
+
+			#buttonBar{
+				text-align: left;
+				margin-top: 65vh;
+				margin-left: 35vw;
+			}
+
+			#buttonBar > img, .sign-container > img{
+				width: 10vw;
+			}
+
+			#sign-container{
+				position: relative;
+				text-align: center;
+			}
+
+			#sign-text{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				color: white;
+				transform: translate(-50%, -50%);
+			}
+
+			#sign{
+				width: 10vw;
+			}
+		</style>
+		<script type="text/javascript" src="scripts/button.js"></script>
+	</head>
+	<body>
+		<audio id="clickSound">
+			<source src="sounds/button.mp3" type="audio/mpeg">
+		</audio>
+
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<img src="images/lamp_on.png" id="lamp">
+		<br>
+		<div id="buttonBar">
+			<span class="sign-container">
+				<img src="images/sign.png" id="sign">
+				<span id="sign-text">enter your name:</span>
+			</span>
+			<img src="images/button.png" id="theButton" onclick="clicked()">
+		</div>
+	</body>
+</html>
